@@ -7,6 +7,9 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { FormsModule } from '@angular/forms';
 import { NavbarComponent } from './shared/navbar/navbar.component';
+import { HomeComponent } from './home/home.component';
+import { FeaturesComponent } from './features/features.component';
+import { ProfilerComponent } from './profiler/profiler.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +17,9 @@ import { NavbarComponent } from './shared/navbar/navbar.component';
     LoginComponent,
     RegisterComponent,
     NavbarComponent,
+    HomeComponent,
+    FeaturesComponent,
+    ProfilerComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   exports: [NavbarComponent],
