@@ -11,6 +11,8 @@ import { HomeComponent } from './home/home.component';
 import { FeaturesComponent } from './features/features.component';
 import { ProfilerComponent } from './profiler/profiler.component';
 
+import { HttpClientModule } from '@angular/common/http';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +23,7 @@ import { ProfilerComponent } from './profiler/profiler.component';
     FeaturesComponent,
     ProfilerComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, FormsModule],
+  imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   exports: [NavbarComponent],
   providers: [],
   bootstrap: [AppComponent],
