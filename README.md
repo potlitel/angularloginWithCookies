@@ -29,3 +29,4 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 https://stackblitz.com/edit/angular-ivy-qbmvbm?file=src%2Fapp%2Fnavbar%2Fnavbar.component.css,src%2Fapp%2Fapp.module.ts
 
 https://tailwindtemplates.io/templates?category=button&page=2
+https://codingpotions.com/angular-login-sesion/
