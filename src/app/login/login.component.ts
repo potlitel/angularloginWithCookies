@@ -32,6 +32,13 @@ export class LoginComponent {
 
   /**
    * Description
+   * @param {any} m
+   * @returns {any}
+   *  */
+  sleep = (m: any): any => new Promise((r) => setTimeout(r, m));
+
+  /**
+   * Description
    * @returns {any}
    *  */
   login(): void {
@@ -43,11 +50,16 @@ export class LoginComponent {
         console.log(data);
       }, //onError method (Blank for now)
       () => {
-        this.loading$.next(false);
+        setTimeout(() => {
+          this.loading$.next(false);
+        }, 2000);
       },
       //onComplated method, now that we have the data we can set the loading to false
       () => {
-        this.loading$.next(false);
+        // this.sleep(10000);
+        setTimeout(() => {
+          this.loading$.next(false);
+        }, 2000);
       }
     );
   }

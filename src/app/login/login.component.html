@@ -287,6 +287,14 @@
       </div>
 
       <div>
+        <p class="mt-10 text-center text-sm text-gray-500">
+          Not a member?
+          <a
+            href="#"
+            class="font-semibold leading-6 text-indigo-600 hover:text-indigo-500"
+            >Start a 14 day free trial</a
+          >
+        </p>
         <button
           type="submit"
           (click)="login()"
@@ -296,21 +304,16 @@
         </button>
       </div>
     </form>
-    <div *ngIf="getLoading() | async">
-      Verificando identidad de usuario
-      <div class="spinner-square">
-        <div class="square-1 square"></div>
-        <div class="square-2 square"></div>
-        <div class="square-3 square"></div>
-      </div>
+    <div *ngIf="getLoading() | async" class="text-center">
+      <app-loading loadingText="Verificando identidad de usuario"></app-loading>
     </div>
-    <p class="mt-10 text-center text-sm text-gray-500">
+    <!-- <p class="mt-10 text-center text-sm text-gray-500">
       Not a member?
       <a
         href="#"
         class="font-semibold leading-6 text-indigo-600 hover:text-indigo-500"
         >Start a 14 day free trial</a
       >
-    </p>
+    </p> -->
   </div>
 </div>

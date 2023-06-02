@@ -12,6 +12,7 @@ import { FeaturesComponent } from './features/features.component';
 import { ProfilerComponent } from './profiler/profiler.component';
 
 import { HttpClientModule } from '@angular/common/http';
+import { LoadingComponent } from './shared/loading/loading.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { HttpClientModule } from '@angular/common/http';
     HomeComponent,
     FeaturesComponent,
     ProfilerComponent,
+    LoadingComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   exports: [NavbarComponent],
