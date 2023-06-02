@@ -4,14 +4,18 @@
 
 @media screen and (max-width: 639px) {
   header:has(#toggle:checked) #navigation {
-      height: var(--menu-height, 10rem);
+    height: var(--menu-height, 10rem);
   }
 
   header:has(#toggle:checked) #menu-icon {
-      display: none;
+    display: none;
   }
 
   header:has(#toggle:checked) #close-icon {
-      display: inline-block;
+    display: inline-block;
   }
+}
+
+.bg-violet-500 {
+  background-color: #4f46e5;
 }

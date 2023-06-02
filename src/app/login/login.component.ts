@@ -49,7 +49,8 @@ export class LoginComponent {
       (data) => {
         console.log(data);
       }, //onError method (Blank for now)
-      () => {
+      (err) => {
+        console.log(err);
         setTimeout(() => {
           this.loading$.next(false);
         }, 2000);
