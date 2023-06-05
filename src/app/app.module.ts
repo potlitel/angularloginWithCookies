@@ -13,6 +13,7 @@ import { ProfilerComponent } from './profiler/profiler.component';
 
 import { HttpClientModule } from '@angular/common/http';
 import { LoadingComponent } from './shared/loading/loading.component';
+import { MaterialModule } from './material/material.module';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,7 @@ import { LoadingComponent } from './shared/loading/loading.component';
     ProfilerComponent,
     LoadingComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
+  imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule, MaterialModule],
   exports: [NavbarComponent],
   providers: [],
   bootstrap: [AppComponent],

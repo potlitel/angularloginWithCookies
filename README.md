@@ -30,3 +30,4 @@ https://stackblitz.com/edit/angular-ivy-qbmvbm?file=src%2Fapp%2Fnavbar%2Fnavbar.
 
 https://tailwindtemplates.io/templates?category=button&page=2
 https://codingpotions.com/angular-login-sesion/
+https://stackoverflow.com/questions/62295166/how-to-import-all-angular-material-modules-in-angular-9

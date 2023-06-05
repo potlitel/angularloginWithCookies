@@ -1,5 +1,7 @@
+import { HttpErrorResponse } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { BehaviorSubject, Observable } from 'rxjs';
+import { handlerResponseError } from '../shared/utils.functions';
 import { UsersService } from './services/users-service.service';
 
 @Component({
@@ -49,8 +51,9 @@ export class LoginComponent {
       (data) => {
         console.log(data);
       }, //onError method (Blank for now)
-      (err) => {
-        console.log(err);
+      (err: HttpErrorResponse) => {
+        // console.log(err);
+        handlerResponseError(err);
         setTimeout(() => {
           this.loading$.next(false);
         }, 2000);
