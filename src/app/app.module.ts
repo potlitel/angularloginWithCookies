@@ -14,6 +14,7 @@ import { ProfilerComponent } from './profiler/profiler.component';
 import { HttpClientModule } from '@angular/common/http';
 import { LoadingComponent } from './shared/loading/loading.component';
 import { MaterialModule } from './material/material.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,7 @@ import { MaterialModule } from './material/material.module';
     ProfilerComponent,
     LoadingComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule, MaterialModule],
+  imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule, MaterialModule, BrowserAnimationsModule],
   exports: [NavbarComponent],
   providers: [],
   bootstrap: [AppComponent],
